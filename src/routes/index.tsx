@@ -30,11 +30,14 @@ function HomePage() {
           
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animate-delay-200">
             <Button variant="gradient" size="lg" className="min-w-40">
-              Get Started
+              <a href="https://app.lens-finance.com/signup" target="_blank" rel="noopener noreferrer">
+                Get Started
+              </a>
             </Button>
+            {/* TODO: build demo environment 
             <Button variant="outline" size="lg" className="min-w-40">
               View Demo
-            </Button>
+            </Button> */}
           </div>
           
           <div className="mt-20 relative w-full max-w-4xl mx-auto animate-fade-in animate-delay-300">
@@ -47,13 +50,13 @@ function HomePage() {
                 </div>
               </div>
               <div className="p-4 pt-10 font-mono text-sm overflow-hidden">
-                <div className="flex items-center">
+                <div className="flex">
                   <span className="text-primary">$</span>
                   <span className="ml-2 typing-animation">
                     Tell me about my recent spending in restaurants
                   </span>
                 </div>
-                <div className="mt-4 pl-4 border-l-2 border-primary/30">
+                <div className="mt-4 pl-4 border-l-2 border-primary/30 text-left">
                   <p className="text-foreground/90 mb-2">
                     I analyzed your last 30 days of transactions:
                   </p>
@@ -119,7 +122,7 @@ function HomePage() {
                 <CheckIcon className="mr-2 text-primary" /> Connect up to 3 accounts
               </li>
             </ul>
-            <Button variant="outline" className="w-full">Get Started Free</Button>
+            <Button variant="outline" className="w-full"><a href="https://app.lens-finance.com/signup" target="_blank" rel="noopener noreferrer">Get Started Free</a></Button>
           </div>
 
           <div className="relative border border-primary p-8 md:w-80 bg-secondary">
@@ -143,7 +146,7 @@ function HomePage() {
                 <CheckIcon className="mr-2 text-primary" /> <strong className="text-primary">Priority support</strong>
               </li>
             </ul>
-            <Button variant="gradient" className="w-full">Upgrade to Pro</Button>
+            <Button variant="gradient" className="w-full"><a href="https://app.lens-finance.com/signup" target="_blank" rel="noopener noreferrer">Upgrade to Pro</a></Button>
           </div>
         </div>
       </SectionContainer>
@@ -154,7 +157,7 @@ function HomePage() {
         <p className="text-foreground/70 max-w-2xl mx-auto mb-8">
           Join thousands of users who are transforming their financial journey with Lens Finance.
         </p>
-        <Button variant="gradient" size="lg" className="min-w-44">Get Started Now</Button>
+        <Button variant="gradient" size="lg" className="min-w-44"><a href="https://app.lens-finance.com/signup" target="_blank" rel="noopener noreferrer">Get Started Now</a></Button>
       </SectionContainer>
     </div>
   )

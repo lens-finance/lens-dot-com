@@ -101,9 +101,9 @@ function PricingPage() {
                   Priority support
                 </PricingFeature>
               </ul>
-              <Button variant="outline" className="w-full">
+              <Button variant="outline" className="w-full"><a href="https://app.lens-finance.com/signup" target="_blank" rel="noopener noreferrer">
                 Get Started Free
-              </Button>
+              </a></Button>
             </div>
           </div>
 
@@ -154,9 +154,9 @@ function PricingPage() {
                   Priority support
                 </PricingFeature>
               </ul>
-              <Button variant="gradient" className="w-full">
+              <Button variant="gradient" className="w-full"><a href="https://app.lens-finance.com/signup" target="_blank" rel="noopener noreferrer">
                 Upgrade to Pro
-              </Button>
+              </a></Button>
             </div>
           </div>
         </div>

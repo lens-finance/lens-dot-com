@@ -30,10 +30,10 @@
 /* Typing animation */
 @keyframes typing {
   from {
-    width: 0;
+    max-width: 0;
   }
   to {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -41,8 +41,7 @@
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 2s steps(40, end) forwards;
-  width: 0;
+  animation: typing 4s steps(40, end) forwards;
 }
 
 /* Pulse animation */

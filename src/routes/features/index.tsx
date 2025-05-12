@@ -1,4 +1,4 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, Link } from '@tanstack/react-router'
 import { SectionContainer } from '../../components/ui/container'
 import { Button } from '../../components/ui/button'
 
@@ -145,8 +145,8 @@ function FeaturesPage() {
           Start using Lens Finance today and transform how you understand and manage your financial data.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="gradient" size="lg">Get Started Now</Button>
-          <Button variant="outline" size="lg">View Pricing</Button>
+          <Button variant="gradient" size="lg"><a href="https://app.lens-finance.com/signup" target="_blank" rel="noopener noreferrer">Get Started Now</a></Button>
+          <Button variant="outline" size="lg"><Link to="/pricing">View Pricing</Link></Button>
         </div>
       </SectionContainer>
     </div>
