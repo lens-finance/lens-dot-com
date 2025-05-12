@@ -15,7 +15,6 @@ import { Route as IndexImport } from './routes/index'
 import { Route as PricingIndexImport } from './routes/pricing/index'
 import { Route as FeaturesIndexImport } from './routes/features/index'
 import { Route as AboutIndexImport } from './routes/about/index'
-import { Route as ExampleChatImport } from './routes/example.chat'
 
 // Create/Update Routes
 
@@ -43,12 +42,6 @@ const AboutIndexRoute = AboutIndexImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const ExampleChatRoute = ExampleChatImport.update({
-  id: '/example/chat',
-  path: '/example/chat',
-  getParentRoute: () => rootRoute,
-} as any)
-
 // Populate the FileRoutesByPath interface
 
 declare module '@tanstack/react-router' {
@@ -58,13 +51,6 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexImport
-      parentRoute: typeof rootRoute
-    }
-    '/example/chat': {
-      id: '/example/chat'
-      path: '/example/chat'
-      fullPath: '/example/chat'
-      preLoaderRoute: typeof ExampleChatImport
       parentRoute: typeof rootRoute
     }
     '/about/': {
@@ -95,7 +81,6 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/example/chat': typeof ExampleChatRoute
   '/about': typeof AboutIndexRoute
   '/features': typeof FeaturesIndexRoute
   '/pricing': typeof PricingIndexRoute
@@ -103,7 +88,6 @@ export interface FileRoutesByFullPath {
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/example/chat': typeof ExampleChatRoute
   '/about': typeof AboutIndexRoute
   '/features': typeof FeaturesIndexRoute
   '/pricing': typeof PricingIndexRoute
@@ -112,7 +96,6 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
-  '/example/chat': typeof ExampleChatRoute
   '/about/': typeof AboutIndexRoute
   '/features/': typeof FeaturesIndexRoute
   '/pricing/': typeof PricingIndexRoute
@@ -120,22 +103,15 @@ export interface FileRoutesById {
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/example/chat' | '/about' | '/features' | '/pricing'
+  fullPaths: '/' | '/about' | '/features' | '/pricing'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/example/chat' | '/about' | '/features' | '/pricing'
-  id:
-    | '__root__'
-    | '/'
-    | '/example/chat'
-    | '/about/'
-    | '/features/'
-    | '/pricing/'
+  to: '/' | '/about' | '/features' | '/pricing'
+  id: '__root__' | '/' | '/about/' | '/features/' | '/pricing/'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  ExampleChatRoute: typeof ExampleChatRoute
   AboutIndexRoute: typeof AboutIndexRoute
   FeaturesIndexRoute: typeof FeaturesIndexRoute
   PricingIndexRoute: typeof PricingIndexRoute
@@ -143,7 +119,6 @@ export interface RootRouteChildren {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  ExampleChatRoute: ExampleChatRoute,
   AboutIndexRoute: AboutIndexRoute,
   FeaturesIndexRoute: FeaturesIndexRoute,
   PricingIndexRoute: PricingIndexRoute,
@@ -160,7 +135,6 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/example/chat",
         "/about/",
         "/features/",
         "/pricing/"
@@ -168,9 +142,6 @@ export const routeTree = rootRoute
     },
     "/": {
       "filePath": "index.tsx"
-    },
-    "/example/chat": {
-      "filePath": "example.chat.tsx"
     },
     "/about/": {
       "filePath": "about/index.tsx"
