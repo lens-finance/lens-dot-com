@@ -130,16 +130,16 @@ function PricingPage() {
               <h3 className="text-xl font-semibold mb-4">What's included:</h3>
               <ul className="space-y-4 mb-8">
                 <PricingFeature included>
-                  <strong className="text-primary">Unlimited</strong> chat queries per month
+                  <strong className="text-primary">Unlimited chat queries per month</strong> 
                 </PricingFeature>
                 <PricingFeature included>
-                  Advanced financial queries
+                  <strong className="text-primary">Advanced financial queries</strong>
                 </PricingFeature>
                 <PricingFeature included>
-                  Connect unlimited financial accounts
+                  <strong className="text-primary">Connect unlimited financial accounts</strong>
                 </PricingFeature>
                 <PricingFeature included>
-                  Priority response time
+                  <strong className="text-primary">Priority response time</strong>
                 </PricingFeature>
                 <PricingFeature included>
                   Advanced reporting and exports

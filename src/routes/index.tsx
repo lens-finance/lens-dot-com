@@ -95,29 +95,29 @@ function HomePage() {
         </div>
       </SectionContainer>
 
-      {/* API Credits Section */}
+      {/* Pricing Plans Section */}
       <SectionContainer className="bg-card border-y border-border">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">Flexible API Credits</h2>
+          <h2 className="text-3xl font-bold mb-4">Simple, Transparent Pricing</h2>
           <p className="text-foreground/70 max-w-2xl mx-auto">
-            Use our API to integrate Lens Finance with your applications and services.
+            Choose the plan that's right for you with unlimited chat queries on our Pro plan.
           </p>
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 justify-center">
           <div className="border border-border p-8 md:w-80">
-            <div className="mb-4 font-medium text-primary/80">Free Tier</div>
-            <h3 className="text-3xl font-bold mb-2">20 Credits</h3>
-            <p className="text-foreground/70 mb-6">Perfect for testing and small applications</p>
+            <div className="mb-4 font-medium text-primary/80">Free</div>
+            <h3 className="text-3xl font-bold mb-2">$0</h3>
+            <p className="text-foreground/70 mb-6">Perfect for trying out Lens Finance</p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-center">
-                <CheckIcon className="mr-2 text-primary" /> Basic API access
+                <CheckIcon className="mr-2 text-primary" /> 10 chat queries per month
               </li>
               <li className="flex items-center">
-                <CheckIcon className="mr-2 text-primary" /> 20 API calls per month
+                <CheckIcon className="mr-2 text-primary" /> Basic financial queries
               </li>
               <li className="flex items-center">
-                <CheckIcon className="mr-2 text-primary" /> Standard response time
+                <CheckIcon className="mr-2 text-primary" /> Connect up to 3 accounts
               </li>
             </ul>
             <Button variant="outline" className="w-full">Get Started Free</Button>
@@ -127,21 +127,21 @@ function HomePage() {
             <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-3 py-1 text-sm font-medium">
               Popular
             </div>
-            <div className="mb-4 font-medium text-primary">Pro Tier</div>
-            <h3 className="text-3xl font-bold mb-2">100 Credits</h3>
+            <div className="mb-4 font-medium text-primary">Pro</div>
+            <h3 className="text-3xl font-bold mb-2">$5</h3>
             <p className="text-foreground/70 mb-6">For businesses and power users</p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-center">
-                <CheckIcon className="mr-2 text-primary" /> Advanced API access
+                <CheckIcon className="mr-2 text-primary" /> <strong className="text-primary">Unlimited chat queries</strong> 
               </li>
               <li className="flex items-center">
-                <CheckIcon className="mr-2 text-primary" /> 100 API calls per month
+                <CheckIcon className="mr-2 text-primary" /> <strong className="text-primary">Advanced financial queries</strong>
               </li>
               <li className="flex items-center">
-                <CheckIcon className="mr-2 text-primary" /> Priority response time
+                <CheckIcon className="mr-2 text-primary" /> <strong className="text-primary">Unlimited accounts</strong>
               </li>
               <li className="flex items-center">
-                <CheckIcon className="mr-2 text-primary" /> Priority support
+                <CheckIcon className="mr-2 text-primary" /> <strong className="text-primary">Priority support</strong>
               </li>
             </ul>
             <Button variant="gradient" className="w-full">Upgrade to Pro</Button>
