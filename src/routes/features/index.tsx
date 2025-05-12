@@ -21,7 +21,7 @@ function FeaturesPage() {
             Powerful Features
           </h1>
           <p className="text-xl text-foreground/80 max-w-2xl mx-auto mb-8 animate-fade-in animate-delay-100">
-            Discover how LENS Finance transforms your relationship with money through advanced natural language processing and financial analytics.
+            Discover how Lens Finance transforms your relationship with money through advanced natural language processing and financial analytics.
           </p>
         </div>
       </section>
@@ -69,7 +69,7 @@ function FeaturesPage() {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Additional Capabilities</h2>
           <p className="text-foreground/70 max-w-2xl mx-auto">
-            Explore the full range of tools and features that make LENS Finance the perfect solution for your financial needs.
+            Explore the full range of tools and features that make Lens Finance the perfect solution for your financial needs.
           </p>
         </div>
 
@@ -93,7 +93,7 @@ function FeaturesPage() {
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-4">Seamless API Integration</h2>
             <p className="text-foreground/80 mb-6">
-              Our robust API allows you to integrate LENS Finance's powerful financial intelligence capabilities directly into your applications. With simple endpoints and comprehensive documentation, you can add natural language financial analysis to any project.
+              Our robust API allows you to integrate Lens Finance's powerful financial intelligence capabilities directly into your applications. With simple endpoints and comprehensive documentation, you can add natural language financial analysis to any project.
             </p>
             <div className="space-y-4 mb-6">
               <div className="border border-border p-4">
@@ -144,7 +144,7 @@ function FeaturesPage() {
       <SectionContainer className="text-center bg-gradient-to-r from-secondary to-secondary/50 py-20">
         <h2 className="text-3xl font-bold mb-4">Ready to experience these features?</h2>
         <p className="text-foreground/70 max-w-2xl mx-auto mb-8">
-          Start using LENS Finance today and transform how you understand and manage your financial data.
+          Start using Lens Finance today and transform how you understand and manage your financial data.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button variant="gradient" size="lg">Get Started Now</Button>

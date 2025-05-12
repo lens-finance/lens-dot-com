@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <Logo className="mb-4" />
             <p className="text-foreground/70 mb-4">
-              LENS Finance provides intelligent financial insights through natural language.
+              Lens Finance provides intelligent financial insights through natural language.
             </p>
             <div className="flex space-x-4">
               <SocialIcon href="#" aria-label="Twitter">
@@ -65,7 +65,7 @@ export default function Footer() {
         
         <div className="border-t border-border mt-10 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-foreground/60 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} LENS Finance. All rights reserved.
+            © {new Date().getFullYear()} Lens Finance. All rights reserved.
           </div>
           <div className="flex space-x-6">
             <Link to="#" className="text-foreground/60 hover:text-primary text-sm transition-colors">

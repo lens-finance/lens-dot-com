@@ -70,7 +70,7 @@ function PricingPage() {
                 <span className="text-foreground/60 ml-1">/ forever</span>
               </div>
               <p className="text-foreground/70">
-                Perfect for trying out LENS Finance and small projects
+                Perfect for trying out Lens Finance and small projects
               </p>
             </div>
             <div className="p-8 flex-grow">
@@ -175,7 +175,7 @@ function PricingPage() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">What is a chat query?</h3>
                 <p className="text-foreground/80">
-                  A chat query is any question you ask our LENS Finance assistant about your finances.
+                  A chat query is any question you ask our Lens Finance assistant about your finances.
                   Each conversation you start with our AI counts as one query.
                 </p>
               </div>

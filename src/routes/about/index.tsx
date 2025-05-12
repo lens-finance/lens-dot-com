@@ -18,7 +18,7 @@ function AboutPage() {
 
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-            About LENS Finance
+            About Lens Finance
           </h1>
           <p className="text-xl text-foreground/80 max-w-2xl mx-auto mb-8 animate-fade-in animate-delay-100">
             We're building the future of financial intelligence with advanced MCP technology.
@@ -32,7 +32,7 @@ function AboutPage() {
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
             <p className="text-foreground/80 mb-4">
-              At LENS Finance, we believe that everyone deserves clear insight into their financial life. We're on a mission to demystify personal finance by using cutting-edge artificial intelligence to make financial data accessible, understandable, and actionable.
+              At Lens Finance, we believe that everyone deserves clear insight into their financial life. We're on a mission to demystify personal finance by using cutting-edge artificial intelligence to make financial data accessible, understandable, and actionable.
             </p>
             <p className="text-foreground/80 mb-4">
               Our Model Context Protocol (MCP) server technology represents a breakthrough in how people can interact with their financial data. By enabling natural language conversations about your finances, we're creating a more intuitive way to understand your money.
@@ -79,7 +79,7 @@ function AboutPage() {
       <SectionContainer>
         <h2 className="text-3xl font-bold mb-6 text-center">Our Technology</h2>
         <p className="text-foreground/80 max-w-3xl mx-auto text-center mb-12">
-          LENS Finance is built on our proprietary MCP (Model Context Protocol) server technology, which enables sophisticated, context-aware conversations about financial data.
+          Lens Finance is built on our proprietary MCP (Model Context Protocol) server technology, which enables sophisticated, context-aware conversations about financial data.
         </p>
         
         <div className="grid md:grid-cols-2 gap-10">
@@ -192,7 +192,7 @@ function AboutPage() {
       <SectionContainer className="text-center">
         <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
         <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
-          Have questions about LENS Finance? We'd love to hear from you. Reach out to our team for more information.
+          Have questions about Lens Finance? We'd love to hear from you. Reach out to our team for more information.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button variant="gradient" size="lg">Contact Us</Button>

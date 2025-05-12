@@ -19,7 +19,7 @@ function HomePage() {
         <div className="container mx-auto px-4 flex flex-col items-center text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 animate-fade-in">
             <span className="bg-gradient-to-r from-primary to-[oklch(0.75_0.18_175)] bg-clip-text text-transparent">
-              LENS Finance
+              Lens Finance
             </span>
             <span className="block mt-3">Your Financial Journey in Focus</span>
           </h1>
@@ -100,7 +100,7 @@ function HomePage() {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Flexible API Credits</h2>
           <p className="text-foreground/70 max-w-2xl mx-auto">
-            Use our API to integrate LENS Finance with your applications and services.
+            Use our API to integrate Lens Finance with your applications and services.
           </p>
         </div>
 
@@ -153,7 +153,7 @@ function HomePage() {
       <SectionContainer className="text-center">
         <h2 className="text-3xl font-bold mb-4">Ready to gain clarity on your finances?</h2>
         <p className="text-foreground/70 max-w-2xl mx-auto mb-8">
-          Join thousands of users who are transforming their financial journey with LENS Finance.
+          Join thousands of users who are transforming their financial journey with Lens Finance.
         </p>
         <Button variant="gradient" size="lg" className="min-w-44">Get Started Now</Button>
       </SectionContainer>
