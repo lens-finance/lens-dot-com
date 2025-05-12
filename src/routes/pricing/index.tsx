@@ -165,13 +165,10 @@ function PricingPage() {
       {/* Chat Queries Explanation */}
       <SectionContainer className="bg-card border-y border-border mt-16">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Understanding Chat Queries</h2>
+          <h2 className="text-3xl font-bold mb-8">Understanding Chat Queries</h2>
           
           <div className="space-y-8">
             <div className="flex flex-col md:flex-row gap-6">
-              <div className="flex-shrink-0 bg-primary/10 p-4 flex items-center justify-center">
-                <span className="text-3xl">💬</span>
-              </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">What is a chat query?</h3>
                 <p className="text-foreground/80">
@@ -182,9 +179,6 @@ function PricingPage() {
             </div>
             
             <div className="flex flex-col md:flex-row gap-6">
-              <div className="flex-shrink-0 bg-primary/10 p-4 flex items-center justify-center">
-                <span className="text-3xl">🔍</span>
-              </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Types of queries you can make</h3>
                 <p className="text-foreground/80 mb-3">
@@ -208,9 +202,6 @@ function PricingPage() {
             </div>
             
             <div className="flex flex-col md:flex-row gap-6">
-              <div className="flex-shrink-0 bg-primary/10 p-4 flex items-center justify-center">
-                <span className="text-3xl">🔄</span>
-              </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">When do queries reset?</h3>
                 <p className="text-foreground/80">

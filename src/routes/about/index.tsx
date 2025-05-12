@@ -55,25 +55,6 @@ function AboutPage() {
         </div>
       </SectionContainer>
 
-      {/* Our Team */}
-      <SectionContainer className="bg-card border-y border-border">
-        <h2 className="text-3xl font-bold mb-12 text-center">Meet Our Team</h2>
-        
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="flex flex-col items-center text-center">
-              <div className="w-32 h-32 mb-4 overflow-hidden bg-primary/10 border border-primary/30">
-                <div className="w-full h-full flex items-center justify-center text-5xl">
-                  {member.initial}
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold">{member.name}</h3>
-              <div className="text-primary/80 mb-2">{member.title}</div>
-              <p className="text-foreground/70">{member.bio}</p>
-            </div>
-          ))}
-        </div>
-      </SectionContainer>
 
       {/* Our Technology */}
       <SectionContainer>
@@ -84,7 +65,6 @@ function AboutPage() {
         
         <div className="grid md:grid-cols-2 gap-10">
           <div className="border border-border p-6 transition-all duration-300 hover:border-primary/30 hover:shadow-md hover:shadow-primary/5">
-            <div className="text-primary mb-4 text-3xl">🧠</div>
             <h3 className="text-xl font-semibold mb-3">Advanced NLP Engine</h3>
             <p className="text-foreground/80 mb-4">
               Our natural language processing engine understands complex financial queries, context, and user intent to provide accurate, helpful responses.
@@ -106,7 +86,6 @@ function AboutPage() {
           </div>
           
           <div className="border border-border p-6 transition-all duration-300 hover:border-primary/30 hover:shadow-md hover:shadow-primary/5">
-            <div className="text-primary mb-4 text-3xl">🔒</div>
             <h3 className="text-xl font-semibold mb-3">Security First Architecture</h3>
             <p className="text-foreground/80 mb-4">
               Our platform is built with security at its core, ensuring that your sensitive financial data is always protected.
@@ -114,21 +93,20 @@ function AboutPage() {
             <ul className="space-y-2 text-foreground/70">
               <li className="flex items-start">
                 <span className="text-primary mr-2">•</span>
-                <span>End-to-end encryption for all data transfers</span>
+                <span>End-to-end encryption for all data transfers (TODO)</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary mr-2">•</span>
-                <span>SOC 2 Type II compliant infrastructure</span>
+                <span>SOC 2 Type II compliant infrastructure (TODO)</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary mr-2">•</span>
-                <span>Zero persistent storage of financial credentials</span>
+                <span>Zero persistent storage of financial credentials (TODO)</span>
               </li>
             </ul>
           </div>
           
           <div className="border border-border p-6 transition-all duration-300 hover:border-primary/30 hover:shadow-md hover:shadow-primary/5">
-            <div className="text-primary mb-4 text-3xl">🔄</div>
             <h3 className="text-xl font-semibold mb-3">Financial Data Integration</h3>
             <p className="text-foreground/80 mb-4">
               Seamlessly connect to thousands of financial institutions for comprehensive financial analysis.
@@ -150,7 +128,6 @@ function AboutPage() {
           </div>
           
           <div className="border border-border p-6 transition-all duration-300 hover:border-primary/30 hover:shadow-md hover:shadow-primary/5">
-            <div className="text-primary mb-4 text-3xl">📊</div>
             <h3 className="text-xl font-semibold mb-3">Financial Intelligence System</h3>
             <p className="text-foreground/80 mb-4">
               Our analytics engine provides personalized insights and recommendations based on your financial patterns.
@@ -180,7 +157,6 @@ function AboutPage() {
         <div className="grid md:grid-cols-3 gap-8">
           {values.map((value, index) => (
             <div key={index} className="p-6 border border-border transition-all duration-300 hover:border-primary/30">
-              <div className="text-primary mb-4 text-3xl">{value.icon}</div>
               <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
               <p className="text-foreground/70">{value.description}</p>
             </div>
@@ -203,57 +179,29 @@ function AboutPage() {
   )
 }
 
-// Team members data (fictional)
-const teamMembers = [
-  {
-    initial: "A",
-    name: "Alex Chen",
-    title: "Founder & CEO",
-    bio: "Former fintech executive with a passion for making financial data accessible to everyone."
-  },
-  {
-    initial: "S",
-    name: "Sarah Johnson",
-    title: "CTO",
-    bio: "AI researcher with expertise in natural language processing and financial data analysis."
-  },
-  {
-    initial: "M",
-    name: "Michael Torres",
-    title: "Head of Product",
-    bio: "Product leader focused on creating intuitive, user-friendly financial interfaces."
-  }
-];
-
 // Company values
 const values = [
   {
-    icon: "🔍",
     title: "Transparency",
     description: "We believe in complete transparency in how we handle your data and how our technology works."
   },
   {
-    icon: "🔒",
     title: "Security",
     description: "We maintain the highest standards of security to protect your sensitive financial information."
   },
   {
-    icon: "🤝",
     title: "Accessibility",
     description: "We're committed to making financial intelligence accessible to people of all backgrounds."
   },
   {
-    icon: "💡",
     title: "Innovation",
     description: "We continuously push the boundaries of what's possible with financial technology."
   },
   {
-    icon: "📈",
     title: "Empowerment",
     description: "We build tools that empower individuals to take control of their financial future."
   },
   {
-    icon: "🌱",
     title: "Sustainability",
     description: "We're building a sustainable business that balances innovation with responsible growth."
   }

@@ -87,7 +87,6 @@ function HomePage() {
         <div className="grid md:grid-cols-3 gap-8">
           {featureCards.map((feature, index) => (
             <div key={index} className="bg-card border border-border p-6 transition-all duration-300 hover:border-primary/30 hover:shadow-md hover:shadow-primary/5">
-              <div className="text-primary mb-4 text-2xl">{feature.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-foreground/70">{feature.description}</p>
             </div>
@@ -164,32 +163,26 @@ function HomePage() {
 // Feature cards data
 const featureCards = [
   {
-    icon: '📊',
     title: 'Natural Language Queries',
     description: 'Ask questions about your finances in plain English and get insightful answers instantly.'
   },
   {
-    icon: '📈',
     title: 'Spending Analysis',
     description: 'Automatically categorize and analyze your spending habits to identify trends and opportunities.'
   },
   {
-    icon: '🔍',
     title: 'Financial Insights',
     description: 'Get personalized insights and recommendations to improve your financial health.'
   },
   {
-    icon: '🔒',
     title: 'Secure Connection',
     description: 'Your financial data is encrypted end-to-end and never stored on our servers.'
   },
   {
-    icon: '🔄',
     title: 'Real-time Updates',
     description: 'Connect to your financial institutions for real-time transaction updates and analysis.'
   },
   {
-    icon: '📱',
     title: 'Cross-platform Access',
     description: 'Access your financial dashboard from any device, anytime, anywhere.'
   }

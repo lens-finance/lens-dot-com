@@ -34,7 +34,6 @@ function FeaturesPage() {
             className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 items-center mb-24 last:mb-0`}
           >
             <div className="md:w-1/2 flex flex-col">
-              <div className="mb-3 text-primary text-2xl">{feature.icon}</div>
               <h2 className="text-3xl font-bold mb-4">{feature.title}</h2>
               <p className="text-foreground/80 mb-6">{feature.description}</p>
               <ul className="space-y-3 mb-6">
@@ -48,7 +47,7 @@ function FeaturesPage() {
             </div>
             <div className="md:w-1/2">
               <div className="bg-card border border-border p-6 relative">
-                <div className="absolute -top-3 left-0 right-0 flex items-center justify-start px-4">
+                <div className="absolute top-4 left-0 right-0 flex items-center justify-start px-4">
                   <div className="flex space-x-2">
                     <div className="w-3 h-3 rounded-full bg-destructive/80"></div>
                     <div className="w-3 h-3 rounded-full bg-primary/30"></div>
@@ -79,7 +78,6 @@ function FeaturesPage() {
               key={index} 
               className="border border-border p-6 transition-all duration-300 hover:border-primary/30 hover:shadow-md hover:shadow-primary/5"
             >
-              <div className="text-primary mb-3 text-xl">{feature.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-foreground/70">{feature.description}</p>
             </div>
@@ -88,7 +86,7 @@ function FeaturesPage() {
       </SectionContainer>
 
       {/* API Integration */}
-      <SectionContainer>
+      {/* <SectionContainer>
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-4">Seamless API Integration</h2>
@@ -138,7 +136,7 @@ function FeaturesPage() {
             </div>
           </div>
         </div>
-      </SectionContainer>
+      </SectionContainer> */}
 
       {/* CTA Section */}
       <SectionContainer className="text-center bg-gradient-to-r from-secondary to-secondary/50 py-20">
@@ -293,47 +291,38 @@ const mainFeatures = [
 // Additional features data
 const additionalFeatures = [
   {
-    icon: '🔐',
     title: 'Bank-Level Security',
     description: 'End-to-end encryption and secure authentication protocols protect your financial data.'
   },
   {
-    icon: '🔄',
     title: 'Real-Time Sync',
     description: 'Connect to thousands of financial institutions for up-to-the-minute transaction data.'
   },
   {
-    icon: '🖥️',
     title: 'Multi-Platform Access',
     description: 'Access your financial dashboard from any device with our responsive web interface.'
   },
   {
-    icon: '📱',
     title: 'Mobile App Integration',
     description: 'Seamlessly integrate with our mobile apps for iOS and Android for on-the-go access.'
   },
   {
-    icon: '📊',
     title: 'Custom Reports',
     description: 'Generate detailed financial reports tailored to your specific needs and requirements.'
   },
   {
-    icon: '🔔',
     title: 'Smart Alerts',
     description: 'Receive notifications about unusual spending, upcoming bills, and financial opportunities.'
   },
   {
-    icon: '🏦',
     title: 'Multi-Account Management',
     description: 'Manage all your accounts from different financial institutions in one centralized dashboard.'
   },
   {
-    icon: '📝',
     title: 'Transaction Notes',
     description: 'Add custom notes and tags to transactions for better organization and tracking.'
   },
   {
-    icon: '⚙️',
     title: 'Customizable Dashboard',
     description: 'Personalize your financial dashboard to focus on the metrics that matter most to you.'
   }
