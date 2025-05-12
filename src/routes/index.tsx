@@ -39,14 +39,14 @@ function HomePage() {
           
           <div className="mt-20 relative w-full max-w-4xl mx-auto animate-fade-in animate-delay-300">
             <div className="relative bg-card border border-border shadow-xl">
-              <div className="absolute -top-3 left-0 right-0 flex items-center justify-start px-4">
+              <div className="absolute top-4 left-0 right-0 flex items-center justify-start px-4">
                 <div className="flex space-x-2">
                   <div className="w-3 h-3 rounded-full bg-destructive/80"></div>
                   <div className="w-3 h-3 rounded-full bg-primary/30"></div>
                   <div className="w-3 h-3 rounded-full bg-primary/80"></div>
                 </div>
               </div>
-              <div className="p-4 pt-6 font-mono text-sm overflow-hidden">
+              <div className="p-4 pt-10 font-mono text-sm overflow-hidden">
                 <div className="flex items-center">
                   <span className="text-primary">$</span>
                   <span className="ml-2 typing-animation">
